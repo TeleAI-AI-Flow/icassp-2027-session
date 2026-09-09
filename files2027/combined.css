@@ -1,0 +1,20 @@
+/* Combined CSS loader
+   This file consolidates the original multiple <link> tags into a single stylesheet
+   reference. It uses CSS @import to preserve the original files and load order
+   while keeping one <link> in the HTML. Files are expected to live alongside
+   this file in the same `files2026/` directory.
+*/
+@charset "UTF-8";
+
+/* Load Bootstrap first (base layout & utilities) */
+@import url('bootstrap.min.css');
+
+/* Font icons */
+@import url('font-awesome.min.css');
+
+/* Site theme and overrides */
+@import url('agency.css');
+
+/* Webfont helper files used by the theme */
+
+/* End of combined loader */
